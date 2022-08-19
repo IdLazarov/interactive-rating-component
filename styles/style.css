@@ -23,15 +23,18 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     background: var(--very-dark-blue);
     color:var(--white);
 }
 
 
 main{
-    
+   max-width: 360px;
+   height: 40vh;
+   background: var(--dark-blue); 
+   border-radius: 15px;
 }
 
 .submit-form{
