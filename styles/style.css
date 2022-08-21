@@ -10,7 +10,7 @@
     --white: hsl(0, 0%, 100%);
     --orange: hsl(25, 97%, 53%);
     --ligth-grey: hsl(217, 12%, 63%);
-    --medium-gray: hsl(216, 12%, 54%);
+    --medium-gray: hsl(240, 7%, 30%);
     --dark-blue: hsl(213, 19%, 18%);
     --very-dark-blue:hsl(216, 12%, 8%);
 
@@ -18,9 +18,8 @@
 }
 
 body{
-    font-family: 'Overpass', sans-serif;
-    width: 100vw;
-    height: 100%;
+    font-family: 'Overpass', sans-serif; 
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,24 +31,77 @@ body{
 
 main{
    max-width: 360px;
-   height: 40vh;
+   padding: 20px;
    background: var(--dark-blue); 
    border-radius: 15px;
 }
-
-.submit-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.star-image{
+    padding: 16px;
+    background: var(--medium-gray);
+    border-radius: 50%;
+}
+.heading{
+    margin: 20px 0 20px 0;
+}
+main p{
+    color: var(--ligth-grey);
+}
+input[type="radio"] {
+    display: none;
+    border-radius: 50%;
 }
 
-.list{
+.rates{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    text-decoration: none;
-    list-style-type: none;
+    margin: 20px 0 20px 0;
+}
+
+.numbers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--medium-gray);
+    width: 22px;
+    height: 22px;
+    padding: 26px;
+    border-radius: 50%;
+    color: var(--ligth-grey);
+}
+
+.numbers:hover{
+    background: var(--ligth-grey);
+    color: var(--white);
+}
+.numbers:focus{
+    background: var(--orange);
+    color: var(--white);
+}
+input[type="radio"]:checked {
+    background: var(--orange);
+    color: var(--white);
+}
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-button{
+    background: var(--orange);
+    color: var(--white);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    padding: 15px 125px 15px 125px;
+    border-radius: 30px;
+}
+
+.submit-button:hover{
+    color: var(--orange);
+    background: var(--white);
 }
 
 
@@ -77,6 +129,12 @@ main{
 
 
 
+
+
+
+.card{
+    display: none;
+}
 
 
 

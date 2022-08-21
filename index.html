@@ -9,16 +9,14 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    
-  </style>
+
 </head>
 <body>
 
-  <!-- Rating state start -->
+
 <main>
-  <h1>
+  <img class="star-image" src="./images/icon-star.svg" alt="star image...">
+  <h1 class="heading">
     How did we do?
   </h1>
 
@@ -26,38 +24,40 @@
     Please let us know how we did with your support request. All feedback is appreciated 
     to help us improve our offering!
   </p>
-  <form class="submit-form">
-    <ul class="list">
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
-    </ul>
-    <button type="submit">Submit</button>
-  </form>
+  
+    <section class="fieldset">
+        <input type="radio" name="one" id="one" value="one" >
+        <input type="radio" name="two" id="two" value="two" >
+        <input type="radio" name="three" id="three" value="three" >
+        <input type="radio" name="four" id="four" value="four" >
+        <input type="radio" name="five" id="five" value="five" >
+        <div class="rates">
+          <label class="numbers" for="one">1</label>
+          <label class="numbers" for="two">2</label>
+          <label class="numbers" for="three">3</label>
+          <label class="numbers" for="four">4</label>
+          <label class="numbers" for="five">5</label>
+        </div>
+    </section>
+    <section class="button-container">
+      <button class="submit-button" type="submit">Submit</button>
+    </section>
+
+  
  
 </main>
   
 
   
-
-  
-
-  
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
+<div class="card">
   You selected <!-- Add rating here --> out of 5
 
   Thank you!
 
   We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
+</div>
+  
 
   
   <div class="attribution">
