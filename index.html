@@ -15,7 +15,7 @@
 <body>
 
 
-<main>
+<main id="main-card">
   <img class="star-image" src="./images/icon-star.svg" alt="star image...">
   <h1 class="heading">
     How did we do?
@@ -26,23 +26,24 @@
     to help us improve our offering!
   </p>
   
-    <section class="fieldset">
-        <input type="radio" name="one" id="one" value="one" >
-        <input type="radio" name="two" id="two" value="two" >
-        <input type="radio" name="three" id="three" value="three" >
-        <input type="radio" name="four" id="four" value="four" >
-        <input type="radio" name="five" id="five" value="five" >
+    <form class="rates-form" action="/index.html" method="post">
         <div class="rates">
+          <input type="radio" name="ratings" id="one" value="one" >
           <label class="numbers" for="one">1</label>
+          <input type="radio" name="ratings" id="two" value="two" >
           <label class="numbers" for="two">2</label>
+          <input type="radio" name="ratings" id="three" value="three" >
           <label class="numbers" for="three">3</label>
+          <input type="radio" name="ratings" id="four" value="four" >
           <label class="numbers" for="four">4</label>
-          <label class="numbers" for="five">5</label>
+          <input type="radio" name="ratings" id="five" value="five" >
+          <label class="numbers" for="five">5</label> 
         </div>
-    </section>
-    <section class="button-container">
-      <button class="submit-button" type="submit">Submit</button>
-    </section>
+    
+    <div class="button-container">
+      <button class="submit-button" type="submit" >Submit</button>
+    </div>
+  </form>
 
   
  
@@ -50,13 +51,16 @@
   
 
   
-<div class="card">
-  You selected <!-- Add rating here --> out of 5
+<div class="card hidden">
+  <img src="./images/illustration-thank-you.svg" alt="">
+  <span></span> 
 
-  Thank you!
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+  <h2>Thank you!</h2>
+  <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!
+  </p>
+  
 </div>
   
 

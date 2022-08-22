@@ -1,13 +1,12 @@
-const ratingLables = document.querySelectorAll(".numbers");
-let value
+const button = document.querySelector(".submit-button");
+const ratesForm = document.querySelector(".rates-form");
 
+ratesForm.addEventListener("submit", (event)=>{
+    event.preventDefault();
+    console.log(ratesForm.innerHTML);
 
-ratingLables.forEach((rating) => {
-    rating.addEventListener("click", (event) => {
-      value = event.target.textContent;
-      ratingLables.forEach((ratingbtn) => {
-        ratingbtn.removeAttribute("id", "selected");
-      });
-      rating.setAttribute("id", "selected");
-    });
+    return ()=> ratesForm.submit();
 });
+
+
+let spanText = `You selected ${3} out of 5`;

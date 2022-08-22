@@ -45,6 +45,7 @@ main{
 }
 main p{
     color: var(--ligth-grey);
+    font-size: var(--paragraph-font-size);
 }
 input[type="radio"] {
     display: none;
@@ -55,7 +56,7 @@ input[type="radio"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0 20px 0;
+    margin: 30px 0 30px 0;
 }
 
 .numbers{
@@ -69,6 +70,11 @@ input[type="radio"] {
     border-radius: 50%;
     color: var(--ligth-grey);
 }
+
+input:checked + label {
+    background: var(--orange);
+    color: var(--white);
+}
 #selected {
     background: var(--orange);
     color: var(--white);
@@ -77,14 +83,7 @@ input[type="radio"] {
     background: var(--ligth-grey);
     color: var(--white);
 }
-/* .numbers:focus{
-    background: var(--orange);
-    color: var(--white);
-} */
-input[type="radio"]:checked {
-    background: var(--orange);
-    color: var(--white);
-}
+
 .button-container{
     display: flex;
     align-items: center;
@@ -108,36 +107,61 @@ input[type="radio"]:checked {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Design of the hidden card showing onsubmit */
 .card{
-    display: none;
+    margin-top: 50px;
+
+    max-width: 360px;
+    padding: 10px 10px 20px 10px;
+    background: var(--dark-blue); 
+    border-radius: 15px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.card img{
+    padding: 20px;
+}
+
+.card span{
+    margin: 8px 0;
+    padding: 7px 20px 7px 20px;
+    background: var(--medium-gray);
+    border-radius: 30px;
+    color: var(--orange);
+    opacity: 0.9;
+    text-align: center;
+}
+
+.card h2{
+    padding: 20px;
+    font-size: 26px;
+}
+
+.card p{
+    color: var(--ligth-grey);
+    font-size: var(--paragraph-font-size);
+    padding: 0 20px 20px 20px;
+    text-align: center;
+}
+
+
+
+@media only screen and (min-width:600px) {
+    main{
+        max-width: 400px;
+        padding: 40px;
+     }
+    .submit-button{
+        padding: 15px 125px 15px 125px;
+    } 
+    .card{
+        max-width: 400px;
+    }
+}
+
 
 
 
