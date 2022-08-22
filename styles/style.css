@@ -69,15 +69,18 @@ input[type="radio"] {
     border-radius: 50%;
     color: var(--ligth-grey);
 }
-
+#selected {
+    background: var(--orange);
+    color: var(--white);
+}
 .numbers:hover{
     background: var(--ligth-grey);
     color: var(--white);
 }
-.numbers:focus{
+/* .numbers:focus{
     background: var(--orange);
     color: var(--white);
-}
+} */
 input[type="radio"]:checked {
     background: var(--orange);
     color: var(--white);
