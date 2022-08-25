@@ -69,6 +69,7 @@ input[type="radio"] {
     padding: 26px;
     border-radius: 50%;
     color: var(--ligth-grey);
+    cursor: pointer;
 }
 
 input:checked + label {
@@ -99,6 +100,7 @@ input:checked + label {
     font-weight: 700;
     padding: 15px 125px 15px 125px;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 .submit-button:hover{
