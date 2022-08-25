@@ -9,7 +9,6 @@ const toggleHidden = () =>{
     mainCard.classList.toggle("hidden");
     hiddenCard.classList.toggle("hidden");
 }
-
 ratesForm.addEventListener("submit", (event)=>{
     event.preventDefault();
     let selected = Array.from(ratings).find(rating => rating.checked);
