@@ -121,6 +121,11 @@ input:checked + label {
     align-items: center;
 }
 
+/* Hidden class */
+.hidden{
+    display: none;
+}
+
 .card img{
     padding: 20px;
 }
